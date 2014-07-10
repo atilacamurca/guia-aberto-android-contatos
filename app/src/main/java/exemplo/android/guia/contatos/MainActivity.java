@@ -1,9 +1,12 @@
 package exemplo.android.guia.contatos;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import exemplo.android.guia.contatos.view.SalvarActivity;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -32,6 +35,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void irParaSalvar() {
-        // não implementado ainda ...
+        Intent intent  = new Intent(MainActivity.this, SalvarActivity.class);
+        startActivity(intent);
     }
 }
